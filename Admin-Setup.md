@@ -84,6 +84,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
 + Install `espeak`
 
     ```
+    $ sudo apt-get install mplayer
     $ sudo apt-get install espeak
     ```
     
