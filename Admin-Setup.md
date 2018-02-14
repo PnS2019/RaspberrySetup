@@ -79,6 +79,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     ```
     $ sudo pip install keras
     $ sudo apt-get install python-h5py
+    $ sudo apt-get install python-pydot
     ```
 
 + Install `espeak`
