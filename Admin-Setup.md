@@ -69,6 +69,8 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     $ sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi/lastSuccessfulBuild/artifact/output-artifacts/tensorflow-1.5.0-cp27-none-any.whl -U
     ```
 
+    __NOTE__: This operation takes time
+
 + Install Keras
 
     ```
