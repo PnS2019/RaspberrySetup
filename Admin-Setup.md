@@ -17,6 +17,8 @@ $ sudo reboot
 
 ## Setup Pi Camera
 
+Make sure you installed the Pi Camera correctly. Follow the installation instructions at [here](https://picamera.readthedocs.io/en/release-1.13/quickstart.html)
+
 ```
 $ sudo raspi-config
 ```
@@ -57,6 +59,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
 
     ```
     $ sudo apt-get install cmake
+    $ sudo apt-get install libhdf5-dev
     $ sudo apt-get install python-opencv
     $ sudo apt-get install python-scipy
     ```
@@ -75,7 +78,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
 
     ```
     $ sudo pip install keras
-    $ sudo pip install h5py
+    $ sudo apt-get install python-h5py
     ```
 
 + Install `espeak`
