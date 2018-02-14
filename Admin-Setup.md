@@ -33,6 +33,9 @@ Install PiCamera package by
 $ sudo pip install "picamera[array]"
 ```
 
+__NOTE__: apparently OpenCV's `VideoCapture` feature is not working very nicely
+with the Pi Camera.
+
 ## Setup USB Speaker
 
 Update `alsa` options. First copy `res/asound.conf` to `/etc`.
