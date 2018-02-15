@@ -106,16 +106,22 @@ $ cp ./res/IPspeak.pl $HOME
 Edit `/etc/rc.local`:
 
 ```
-sudo /etc/rc.rc.local
+$ sudo /etc/rc.rc.local
 ```
 
 Before `exit 0`, add:
 
 ```
-su -l pi -c 'nohup $HOME/IPspeak.pl >> /dev/null &'
+$ su -l pi -c 'nohup $HOME/IPspeak.pl >> /dev/null &'
 ```
 
-Reboot
+Reboot.
+
+Run following commands to stop from playing
+
+```
+$ pkill IPspeak
+```
 
 ## No HDMI output signal
 
