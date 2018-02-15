@@ -95,6 +95,28 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     $ espeak -ven+f3 -k5 -s150 "I'm Baby Jarvis" > /tmp/test.wav | mplayer /tmp/test.wav
     ```
 
+## Get IP address from speaker
+
+Copy `IPspeak.pl` from `res` folder
+
+```
+$ cp ./res/IPspeak.pl $HOME
+```
+
+Edit `/etc/rc.local`:
+
+```
+sudo /etc/rc.rc.local
+```
+
+Before `exit 0`, add:
+
+```
+su -l pi -c 'nohup $HOME/IPspeak.pl >> /dev/null &'
+```
+
+Reboot
+
 ## No HDMI output signal
 
 1. Take SD card out and connect to another machine.
