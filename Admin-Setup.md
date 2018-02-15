@@ -94,3 +94,19 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     ```
     $ espeak -ven+f3 -k5 -s150 "I'm Baby Jarvis" > /tmp/test.wav | mplayer /tmp/test.wav
     ```
+
+## No HDMI output signal
+
+1. Take SD card out and connect to another machine.
+
+2. Open `config.txt` at `boot` partition
+
+3. Uncomment following three lines:
+
+```
+disable_overscan=1
+hdmi_force_hotplug=1
+config_hdmi_boost=4
+```
+
+4. Save and put the SD card back to the Pi
