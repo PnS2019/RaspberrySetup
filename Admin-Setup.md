@@ -62,6 +62,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     $ sudo apt-get install libhdf5-dev
     $ sudo apt-get install python-opencv
     $ sudo apt-get install python-scipy
+    $ sudo apt-get isntall python-matplotlib
     ```
 
 + Install TensorFlow for Python 2
