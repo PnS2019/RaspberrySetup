@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Install software
+sudo apt-get install build-essential
+
 sudo apt-get install cmake libhdf5-dev python-opencv python-scipy python-matplotlib python-h5py python-pydot
 
 sudo apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python-setuptools

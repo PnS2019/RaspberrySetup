@@ -23,6 +23,8 @@ $ sudo ./setup-upgrade  # machine will be reboot after installation
 $ sudo ./setup-deps  # machine will be reboot after installtion
 ```
 
+SSH is enabled after installation, the password is changed to `pi` for the user `pi`
+
 Install Wireless Hotspot support
 
 ```
