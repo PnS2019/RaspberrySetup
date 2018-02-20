@@ -23,6 +23,16 @@ $ sudo ./setup-upgrade  # machine will be reboot after installation
 $ sudo ./setup-deps  # machine will be reboot after installtion
 ```
 
+Install Wireless Hotspot support
+
+```
+$ git clone https://github.com/PnS2018/RPI-Wireless-Hotspot
+$ cd RPI-Wireless-Hotspot
+$ sudo ./install
+```
+
+And follow the instructions
+
 ### Check camera, speaker and espeak
 
 ```
