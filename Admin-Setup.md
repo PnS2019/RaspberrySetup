@@ -7,6 +7,33 @@
 
 2. Flash your SD card with the image by following [this guide](https://www.raspberrypi.org/learning/software-guide/quickstart/)
 
+## Clone and Run scripts to install all dependencies
+
+Clone this setup guide:
+
+```
+$ git clone https://github.com/PnS2018/RaspiberrySetup
+```
+
+Upgrade and install dependencies:
+
+```
+$ cd ./res/setups
+$ sudo ./setup-upgrade  # machine will be reboot after installation
+$ sudo ./setup-deps  # machine will be reboot after installtion
+```
+
+### Check camera, speaker and espeak
+
+```
+$ cd ./res/setups
+$ ./check-camera
+$ ./check-speaker
+$ ./check-espeak
+```
+
+__Ignore rest of this guide if you've done above settings.__
+
 ## Update the system and upgrade
 
 ```

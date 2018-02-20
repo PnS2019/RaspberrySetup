@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Upgrade and reboot
+sudo apt-get update
+sudo apt-get upgrade
+
+# enable camera
+sudo raspi-config nonint do_camera 0
+
+# enable ssh
+sudo raspi-config nonint do_ssh 0
+# change default password
+echo -e "pi\npi" | sudo passwd pi
+
+# enable USB speaker
+sudo cp ../asound.conf /etc
+
+# reboot
+sudo reboot
