@@ -132,7 +132,7 @@ $ speaker-test -c2 --test=wav -w /usr/share/sounds/alsa/Front_Center.wav
     Test the sound by:
 
     ```
-    $ espeak -ven+f3 -k5 -s150 "I'm Baby Jarvis" > /tmp/test.wav | mplayer /tmp/test.wav
+    $ espeak -ven+f3 -k5 -s150 "I'm Baby Jarvis" --stdout > /tmp/test.wav | mplayer /tmp/test.wav
     ```
 
 ## Get IP address from speaker
