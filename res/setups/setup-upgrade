@@ -2,7 +2,7 @@
 
 # Upgrade and reboot
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 
 # enable camera
 sudo raspi-config nonint do_camera 0
