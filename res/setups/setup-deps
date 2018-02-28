@@ -7,7 +7,7 @@ sudo apt-get install cmake libhdf5-dev python-opencv python-scipy python-matplot
 
 sudo apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python-setuptools -y
 
-sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi/lastSuccessfulBuild/artifact/output-artifacts/tensorflow-1.5.0-cp27-none-any.whl -U
+sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi/176/artifact/output-artifacts/tensorflow-1.5.0-cp27-none-any.whl -U
 
 sudo pip install keras
 
