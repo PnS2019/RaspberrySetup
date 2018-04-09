@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Install software
+sudo apt-get install build-essential -y
+
+sudo apt-get install cmake libhdf5-dev python3-scipy python3-matplotlib python3-h5py python3-pydot -y
+
+sudo apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python3-setuptools -y
+
+# this is the python 3.4 version, need to check python version on raspberry pi
+sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/181/artifact/output-artifacts/tensorflow-1.7.0-cp34-none-any.whl -U
+
+sudo pip install keras -U
+
+sudo pip install "picamera[array]" -U
+
+sudo apt-get install mplayer -y
+
+sudo apt-get install espeak -y
+
+sudo apt-get install python3-skimage python3-skimage-lib -y
+
+sudo apt-get install python3-sklearn python3-sklearn-lib -y
+
+# reboot
+sudo reboot
