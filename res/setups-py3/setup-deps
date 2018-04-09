@@ -7,6 +7,8 @@ sudo apt-get install cmake libhdf5-dev python3-scipy python3-matplotlib python3-
 
 sudo apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python3-setuptools -y
 
+sudo pip install opencv-contrib-python -U
+
 # this is the python 3.4 version, need to check python version on raspberry pi
 sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/181/artifact/output-artifacts/tensorflow-1.7.0-cp34-none-any.whl -U
 
