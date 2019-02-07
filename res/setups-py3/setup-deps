@@ -3,26 +3,23 @@
 # Install software
 sudo apt-get install build-essential -y
 
-sudo apt-get install cmake libhdf5-dev python3-scipy python3-matplotlib python3-h5py python3-pydot -y
+sudo apt-get install cmake libhdf5-dev libblas-dev liblapack-dev libatlas-base-dev libjasper-dev libqtgui4 libqttest4-perl -y
 
-sudo apt-get install libblas-dev liblapack-dev python-dev libatlas-base-dev gfortran python3-setuptools -y
+pip3 install numpy
+pip3 install scipy
+pip3 install matplotlib
+pip3 install h5py
+pip3 install pydot
+pip3 install opencv-contrib-python
+pip3 install "picamera[array]"
+pip3 install scikit-image
+pip3 install scikit-learn
 
-sudo pip install opencv-contrib-python -U
-
-# this is the python 3.4 version, need to check python version on raspberry pi
-sudo pip install http://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/181/artifact/output-artifacts/tensorflow-1.7.0-cp34-none-any.whl -U
-
-sudo pip install keras -U
-
-sudo pip install "picamera[array]" -U
+pip3 install https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.12.0/tensorflow-1.12.0-cp35-none-linux_armv7l.whl
 
 sudo apt-get install mplayer -y
 
 sudo apt-get install espeak -y
-
-sudo apt-get install python3-skimage python3-skimage-lib -y
-
-sudo apt-get install python3-sklearn python3-sklearn-lib -y
 
 # reboot
 sudo reboot
