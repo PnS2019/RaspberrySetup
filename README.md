@@ -1,2 +1,2 @@
-# RaspiberrySetup
-Related to Raspiberry Pi Setup stuffs
+# RaspberrySetup
+Related to Raspberry Pi Setup stuffs

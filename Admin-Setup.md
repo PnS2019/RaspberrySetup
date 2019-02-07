@@ -12,13 +12,13 @@
 Clone this setup guide:
 
 ```
-$ git clone https://github.com/PnS2018/RaspiberrySetup
+$ git clone https://github.com/PnS2019/RaspiberrySetup
 ```
 
 Upgrade and install dependencies:
 
 ```
-$ cd ./res/setups
+$ cd ./res/setups-py3
 $ sudo ./setup-upgrade  # machine will be reboot after installation
 $ sudo ./setup-deps  # machine will be reboot after installtion
 ```
