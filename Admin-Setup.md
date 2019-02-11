@@ -9,6 +9,30 @@
 
 After installation for the Raspbian, set the password as `pnspi`
 
+## Current PnS2019DL image version
+
+We have a derived Raspbian image that is tagged as `PnS2019DL`.
+This image includes all the necessary dependencies for the user to start
+the module. Current version is
+
+```
+PNS2019DL-2019-02-11.img
+```
+
+## How to make a PnS2019DL image?
+
+Use `df -h` to get the correct SD card device location first.
+
+1. Clone the SD card that has installed Raspbian and dependencies, run:
+    ```
+    sudo dd if/dev/sdb of=/path/to/img/file.img
+    ```
+
+2. Shrink with `pishrink`
+    ```
+    sudo pishrink source.img target.img
+    ```
+
 ## Clone and Run scripts to install all dependencies
 
 Clone this setup guide:
@@ -23,6 +47,14 @@ Upgrade and install dependencies:
 $ cd ./res/setups-py3
 $ sudo ./setup-upgrade  # machine will be reboot after installation
 $ sudo ./setup-deps  # machine will be reboot after installtion
+```
+
+Install `pnslib`:
+
+```
+$ git clone https://github.com/PnS2019/pnslib
+$ cd pnslib
+$ python3 setup.py install
 ```
 
 SSH is enabled after installation, the password is changed to `pi` for the user `pi`
@@ -44,6 +76,11 @@ $ cd ./res/setups
 $ ./check-camera
 $ ./check-speaker
 $ ./check-espeak
+$ cd ../../test-scripts
+$ python device_test.py
+$ python test_util_test.py
+$ python test-camera.py
+$ python test-espeak.py
 ```
 
 __Ignore rest of this guide if you've done above settings.__
