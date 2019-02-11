@@ -54,7 +54,7 @@ Install `pnslib`:
 ```
 $ git clone https://github.com/PnS2019/pnslib
 $ cd pnslib
-$ python3 setup.py install
+$ pip3 install .
 ```
 
 SSH is enabled after installation, the password is changed to `pi` for the user `pi`
@@ -77,10 +77,10 @@ $ ./check-camera
 $ ./check-speaker
 $ ./check-espeak
 $ cd ../../test-scripts
-$ python device_test.py
-$ python test_util_test.py
-$ python test-camera.py
-$ python test-espeak.py
+$ python3 device_test.py
+$ python3 test_util_test.py
+$ python3 test-camera.py
+$ python3 test-espeak.py
 ```
 
 __Ignore rest of this guide if you've done above settings.__
