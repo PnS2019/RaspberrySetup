@@ -16,7 +16,7 @@ This image includes all the necessary dependencies for the user to start
 the module. Current version is
 
 ```
-PNS2019DL-2019-02-11.img
+PnS2019DL-2019-02-11.img
 ```
 
 ## How to make a PnS2019DL image?
