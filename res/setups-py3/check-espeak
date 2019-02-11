@@ -1,3 +1,3 @@
 #!/bin/sh
 
-espeak -ven+f3 -k5 -s150 "I'm Baby Jarvis" --stdout > /tmp/test.wav | mplayer /tmp/test.wav
+espeak -ven+f3 -k5 -s150 "P and S Module Check" --stdout > /tmp/test.wav | mplayer /tmp/test.wav

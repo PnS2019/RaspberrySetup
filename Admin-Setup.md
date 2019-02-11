@@ -7,6 +7,8 @@
 
 2. Flash your SD card with the image by following [this guide](https://www.raspberrypi.org/learning/software-guide/quickstart/)
 
+After installation for the Raspbian, set the password as `pnspi`
+
 ## Clone and Run scripts to install all dependencies
 
 Clone this setup guide:
